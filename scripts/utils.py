@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+from sklearn.cluster import KMeans
+from scipy.spatial.distance import cdist
 
 class Util:
 
@@ -92,7 +94,9 @@ class Util:
             ascending=order)
         return new_df.reset_index(drop=True)
     
-    def choose_kmeans(df: pd.DataFrame, num: int):
+    def choose_kmeans(self, df: pd.DataFrame, num: int):
+        #Distortion is the average of the euclidean squared distance from the centroid of their respective clusters.
+        # Inertia is the sum of squared distances of samples to their closest cluster centre.
         distortions = []
         inertias = []
         K = range(1, num)
