@@ -41,10 +41,10 @@ The repository has a number of files including python scripts, jupyter notebooks
 - `workflows/CI.yml` continous integration configuration
 
 
-### data:
+### data
 - the folder where the raw, and cleaned datasets' csv files are stored
 
-### models:
+### models
 - the folder where models' pickle files are stored
 
 ### notebooks
