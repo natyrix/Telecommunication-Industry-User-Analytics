@@ -126,7 +126,7 @@ def app():
     eng_data_df = load_eng_data()
     st.dataframe(eng_data_df.head(1000))
     st.write("")
-    st.markdown("**Users classified into 6 clusters based on their engagement(i.e. number of xDR sessions, duration and total data used).**")
+    st.markdown("***Users classified into 6 clusters based on their engagement(i.e. number of xDR sessions, duration and total data used).***")
     plotly_plot_scatter(eng_data_df, 'Total Data Volume (Bytes)', 'Dur (ms)',
             'cluster', 'xDR Sessions')
 
