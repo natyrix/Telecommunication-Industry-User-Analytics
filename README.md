@@ -47,7 +47,7 @@ The repository has a number of files including python scripts, jupyter notebooks
 ### models:
 - the folder where models' pickle files are stored
 
-### notebooks:
+### notebooks
 - `Data Cleaning, Transforming and Extraction.ipynb`: a jupyter notebook that handles data cleaning tranformation and extraction
 - `User Overview analysis.ipynb`: a jupyter notebook that analyzes general users' behaviours
 - `User Engagement analysis.ipynb`: a jupyter notebook that analyzes the engagement of users
