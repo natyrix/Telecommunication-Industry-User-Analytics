@@ -13,6 +13,7 @@
     - [data](#data)
     - [models](#models)
     - [notebooks](#notebooks)
+    - [screenshots](#screenshots)
     - [scripts](#scripts)
     - [root folder](#root-folder)
   - [Installation guide](#installation-guide)
@@ -53,6 +54,11 @@ The repository has a number of files including python scripts, jupyter notebooks
 - `User Engagement analysis.ipynb`: a jupyter notebook that analyzes the engagement of users
 - `User Experience analysis.ipynb`: a jupyter notebook that analyzes users' network experience
 - `User Satisfaction analysis.ipynb`: a jupyter notebook that analyzes the satisfaction of users
+
+### screenshots
+- `User Engagement Analysis`: a folder that holds screenshots of plots plotted using `plotly` for `notebooks/User Engagement Analysis.ipynb`
+- `User Experience Analysis`: a folder that holds screenshots of plots plotted using `plotly` for `notebooks/User Experience Analysis.ipynb`
+- `User Satisfaction Analysis`: a folder that holds screenshots of plots plotted using `plotly` for `notebooks/User Satisfaction Analysis.ipynb`
 
 ### scripts
 - `clean_dataframe.py`: a python script for cleaning pandas dataframes
