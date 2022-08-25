@@ -1,4 +1,5 @@
 import streamlit as st
+# st.set_page_config(page_title="TellCo Telecom Analytics", layout="wide")
 
 
 class MultiApp:
