@@ -10,6 +10,7 @@
   - [Approach](#approach)
   - [Project Structure](#project-structure)
     - [.github](#.github)
+    - [dashboard](#dashboard)
     - [data](#data)
     - [models](#models)
     - [notebooks](#notebooks)
@@ -41,6 +42,12 @@ The repository has a number of files including python scripts, jupyter notebooks
 - a configuration file for github actions and workflow
 - `workflows/CI.yml` continous integration configuration
 
+### dashboard
+- the folder where all the multiple dashboard pages belong
+- `UserEngagement.py` dashboard page for presenting the findings in `User Engagement Analysis.ipynb`
+- `UserExperience.py` dashboard page for presenting the findings in `User Experience analysis.ipynb`
+- `UserOverview.py` dashboard page for presenting the findings in `User Overview analysis.ipynb`
+- `UserSatisfaction.py` dashboard page for presenting the findings in `User Engagement Analysis.ipynb`
 
 ### data
 - the folder where the raw, and cleaned datasets' csv files are stored
@@ -68,6 +75,8 @@ The repository has a number of files including python scripts, jupyter notebooks
 ### root folder
 - `requirements.txt`: a text file lsiting the projet's dependancies
 - `.gitignore`: a text file listing files and folders to be ignored
+- `.tellco_dashboard.py`: a python script for streamlit dashboard
+- `.multiapp.py`: a python script for connecting multiple streamlit apps
 - `README.md`: Markdown text with a brief explanation of the project and the repository structure.
 
 ## Installation guide
