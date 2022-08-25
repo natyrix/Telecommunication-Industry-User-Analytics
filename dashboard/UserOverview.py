@@ -32,7 +32,7 @@ def app():
     st.header("Top Handsets by manufactureres")
     st.dataframe(top_handsets)
     
-    st.header("Customer numbers with the top number of sessions")
+    st.header("User with the top number of sessions")
     number_of_xdr = clean_data_df.groupby('MSISDN/Number')['MSISDN/Number'].agg(
         'count').reset_index(name='Bearer Id').sort_values(by='Bearer Id', ascending=False)
     number_of_xdr.rename(
@@ -43,7 +43,7 @@ def app():
     fig.update_layout(xaxis_type='category')
     st.plotly_chart(fig)
     
-    st.header("Customer numbers with the top total duration of sessions")
+    st.header("User with the top total duration of sessions")
     sum_duration_of_sessions = clean_data_df.groupby(
         'MSISDN/Number').agg({'Dur (ms)': 'sum'}).sort_values(by='Dur (ms)', ascending=False)
     sum_duration_of_sessions.rename(columns={
@@ -52,7 +52,7 @@ def app():
         "int64")
     st.dataframe(sum_duration_of_sessions.head(10))
     
-    st.header("Customer numbers with the top avarage duration of sessions")
+    st.header("User with the top avarage duration of sessions")
     avg_duration_of_sessions = clean_data_df.groupby(
         'MSISDN/Number').agg({'Dur (ms)': 'mean'}).sort_values(by='Dur (ms)', ascending=False)
     avg_duration_of_sessions.rename(columns={
@@ -60,7 +60,7 @@ def app():
     avg_duration_of_sessions
     
     st.dataframe(avg_duration_of_sessions.head(10))
-    st.header("Customer numbers with the top total data used")
+    st.header("User with the top total data used")
     data_volumes = clean_data_df.groupby('MSISDN/Number')[['Total UL (Bytes)', 'Total DL (Bytes)',
                                                            'Total Data Volume (Bytes)']].sum().sort_values(by='Total Data Volume (Bytes)', ascending=False)
     data_volumes['Total Data Volume (Bytes)'] = data_volumes['Total Data Volume (Bytes)'].astype(
