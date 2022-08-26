@@ -1,0 +1,8 @@
+services:
+  streamlit:
+    container_name: "tellco_data_user_analytics"
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - 8080

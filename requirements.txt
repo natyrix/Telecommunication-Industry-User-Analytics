@@ -5,3 +5,4 @@ sklearn-features==0.0.2
 matplotlib==3.3.2
 seaborn==0.11.2
 streamlit
+setuptools
