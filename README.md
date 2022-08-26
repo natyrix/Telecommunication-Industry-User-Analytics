@@ -71,9 +71,11 @@ The repository has a number of files including python scripts, jupyter notebooks
 - `clean_dataframe.py`: a python script for cleaning pandas dataframes
 - `plot_dataframe.py`: a python script for plotting selected data
 - `utils.py`: a python script for cleaning outliers in a pandas dataframe
+- `logger.py`: a python script used for writing logs to corresponding log files
 
 ### root folder
 - `requirements.txt`: a text file lsiting the projet's dependancies
+- `logs`: a folder that holds log files
 - `.gitignore`: a text file listing files and folders to be ignored
 - `.tellco_dashboard.py`: a python script for streamlit dashboard
 - `.multiapp.py`: a python script for connecting multiple streamlit apps
