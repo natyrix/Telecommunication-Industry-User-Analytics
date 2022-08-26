@@ -80,8 +80,17 @@ The repository has a number of files including python scripts, jupyter notebooks
 - `README.md`: Markdown text with a brief explanation of the project and the repository structure.
 
 ## Installation guide
+Option 1
 ```
 git clone https://github.com/natyrix/Telecommunication-Industry-User-Analytics
 cd Telecommunication-Industry-User-Analytics
-pip install -r requirements.txt
+pip install -r requirements.txt 
 ```
+Option 2
+```
+git clone https://github.com/natyrix/Telecommunication-Industry-User-Analytics
+cd Telecommunication-Industry-User-Analytics
+pip install .
+```
+
+
